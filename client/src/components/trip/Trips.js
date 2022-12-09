@@ -28,11 +28,11 @@ function Trips() {
                                     
                                 </Link>
                                 <img src="https://easternvacations-kenya.com/wp-content/uploads/2016/08/Naivasha-national-park-Photo-Evacations.jpeg" alt="trip" />
-                                <p class="card-text">{trip.end_date}</p>
-                                <p class="card-text">{trip.start_date}</p>
+                                <p className="card-text">{trip.end_date}</p>
+                                <p className="card-text">{trip.start_date}</p>
                                 <Link className="text-decoration-none text-dark"
                                     to={`/trips/${trip.id}`}>
-                                    <h4 class="btn btn-primary" >View Trip Destinations</h4>
+                                    <h4 className="btn btn-primary" >View Trip Destinations</h4>
                                 </Link>
                             </div>
                         </div>

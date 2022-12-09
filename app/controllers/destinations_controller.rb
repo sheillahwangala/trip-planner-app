@@ -4,7 +4,7 @@ class DestinationsController < ApplicationController
 
     def index
         destinations = Destination.all
-        render json: destinations
+        render json: destinations, include: :trips
     end
 
     def show
