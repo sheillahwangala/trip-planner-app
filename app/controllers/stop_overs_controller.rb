@@ -3,27 +3,27 @@ class StopoversController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 
     def show
-        stopover = Stopover.find(params[:id])
-        render json: stopover
+        stop_over = Stop_over.find(params[:id])
+        render json: stop_over
     end
 
     def create
-        stopover = Stopover.create!(stopover_params)
-        render json: stopover, status: :created
+        stop_over = Stop_over.create!(stop_over_params)
+        render json: stop_over, status: :created
     end
 
     private
 
     def render_not_found_response
-        render json: { error: "Stopover not found" }, status: :not_found
+        render json: { error: "Stop_over not found" }, status: :not_found
     end
 
     def render_unprocessable_entity_response
         render json: { errors: invalid.record.errors }, status: :unprocessable_entity
     end
 
-    def stopover_params
-        params,permit(:name, :activity)
+    def stop_over_params
+        params.permit(:name, :activity)
     end
 
 end
