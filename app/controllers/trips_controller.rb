@@ -2,7 +2,7 @@ class TripsController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
     def index
-        trips = Trip.all
+        @trips = Trip.all
         render json: trips
     end
 

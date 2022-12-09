@@ -21,7 +21,7 @@ function AddTrip() {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+                console.log(data)
             })
     }
 
@@ -59,6 +59,10 @@ function AddTrip() {
                 >
                     Add Trip
                 </button>
+            </div>
+
+            <div>
+                
             </div>
         </div>
     )
