@@ -49,6 +49,7 @@ function Trips() {
                 </div>
             </div>
 
+
             <AddTrip/>
 
         </div>
