@@ -38,6 +38,10 @@ function Trips() {
                                     </td>
                                     <td>{trip.start_date}</td>
                                     <td>{trip.end_date}</td>
+                                    <Link className="text-decoration-none text-dark"
+                                            to={`/trips/${trip.id}`}>
+                                            View Trip Destinations
+                                        </Link>
                                 </tr>
                             )
                         })}
