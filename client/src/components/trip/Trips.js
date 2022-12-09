@@ -15,39 +15,6 @@ function Trips() {
     return (
         <div>
             <h5 className="moments" >My Moments...</h5>
-            {/* <div className="home-page">
-
-                <div className="container">
-
-                    <table className="table table-striped">
-                        <tr className="classHeader ">
-                            <th></th>
-                            <th>Trip Title</th>
-                            <th>Start Date</th>
-                            <th>End Date</th>
-                        </tr>
-                        {trips.map((trip, index) => {
-                            return (
-                                <tr key={trip.id}>
-                                    <td>{index + 1} </td>
-                                    <td className="team-name w-30">
-                                        <Link className="text-decoration-none text-dark"
-                                            to={`/trips/${trip.id}`}>
-                                            {trip.title}
-                                        </Link>
-                                    </td>
-                                    <td>{trip.start_date}</td>
-                                    <td>{trip.end_date}</td>
-                                    <Link className="text-decoration-none text-dark"
-                                            to={`/trips/${trip.id}`}>
-                                            View Trip Destinations
-                                        </Link>
-                                </tr>
-                            )
-                        })}
-                    </table>
-                </div>
-            </div> */}
 
             <div className="trip-container" >
                 {trips.map((trip) => {
