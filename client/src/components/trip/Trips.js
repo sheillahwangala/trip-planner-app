@@ -49,18 +49,31 @@ function Trips() {
                 </div>
             </div> */}
 
-
-            <div>
-            <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+            <div className="trip-container" >
+                {trips.map((trip) => {
+                    return (
+                        <div className="card" >
+                            <div className="card-body">
+                                
+                                <Link className="text-decoration-none text-dark"
+                                    to={`/trips/${trip.id}`}>
+                                        <h5 className="card-title">{trip.title}</h5>
+                                    
+                                </Link>
+                                <img src="https://easternvacations-kenya.com/wp-content/uploads/2016/08/Naivasha-national-park-Photo-Evacations.jpeg" alt="trip" />
+                                <p class="card-text">{trip.end_date}</p>
+                                <p class="card-text">{trip.start_date}</p>
+                                <Link className="text-decoration-none text-dark"
+                                    to={`/trips/${trip.id}`}>
+                                    <h4 class="btn btn-primary" >View Trip Destinations</h4>
+                                </Link>
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
-            
-            <AddTrip/>
+
+            <AddTrip />
 
         </div>
     )

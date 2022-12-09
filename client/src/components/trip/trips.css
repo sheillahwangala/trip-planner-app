@@ -29,5 +29,14 @@
     margin-left: 700px; 
     padding: 20px;  
   }
+
+  .trip-container{
+    display: flex;
+    margin: 20px;
+  }
+  .card-body{
+    margin: 20px;
+    margin-left: 20px;
+  }
  
   
