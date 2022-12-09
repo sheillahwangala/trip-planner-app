@@ -29,6 +29,7 @@ function AddTrip() {
         <div className="div-form" >
             <br></br><br></br>
             <h3>Planning for a trip?... Add trip here.</h3>
+            <br></br>
             <div>
                 <input type="text"
                     placeholder="Trip Title"
