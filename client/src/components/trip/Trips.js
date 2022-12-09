@@ -15,7 +15,7 @@ function Trips() {
     return (
         <div>
             <h5 className="moments" >My Moments...</h5>
-            <div className="home-page">
+            {/* <div className="home-page">
 
                 <div className="container">
 
@@ -47,9 +47,19 @@ function Trips() {
                         })}
                     </table>
                 </div>
+            </div> */}
+
+
+            <div>
+            <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
             </div>
-
-
+            
             <AddTrip/>
 
         </div>
