@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Template from './components/template/Template';
-import Home from './components/home/home';
+import Home from './components/home/Home';
+import Trips from './components/trip/Trips';
 // import SignIn from './components/signIn/SignIn';
 
 function App() {
