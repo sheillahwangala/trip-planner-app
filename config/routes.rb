@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stop_overs
   resources :destinations
   resources :trips, only: [:index, :show, :create]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
