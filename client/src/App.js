@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Template from './components/template/Template';
-import Trips from './components/trips/trips';
 import Home from './components/home/home';
 // import SignIn from './components/signIn/SignIn';
 
