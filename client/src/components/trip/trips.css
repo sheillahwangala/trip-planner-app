@@ -29,7 +29,10 @@
   }
   .card-body{
     margin: 20px;
+    min-width: 30%;
     margin-left: 20px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 50px black;
   }
  .div-form {
     max-width: 40%;
