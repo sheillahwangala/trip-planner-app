@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_09_124130) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_09_153454) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,6 +21,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_09_124130) do
     t.string "photos"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "stop_over_id", null: false
+    t.bigint "trip_id", null: false
+    t.index ["stop_over_id"], name: "index_destinations_on_stop_over_id"
+    t.index ["trip_id"], name: "index_destinations_on_trip_id"
   end
 
   create_table "stop_overs", force: :cascade do |t|
@@ -28,6 +32,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_09_124130) do
     t.string "activity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "destination_id", null: false
+    t.index ["destination_id"], name: "index_stop_overs_on_destination_id"
   end
 
   create_table "trips", force: :cascade do |t|
@@ -38,4 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_09_124130) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "destinations", "stop_overs"
+  add_foreign_key "destinations", "trips"
+  add_foreign_key "stop_overs", "destinations"
 end

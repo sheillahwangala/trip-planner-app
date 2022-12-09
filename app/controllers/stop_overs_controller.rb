@@ -23,7 +23,7 @@ class StopoversController < ApplicationController
     end
 
     def stop_over_params
-        params.permit(:name, :activity)
+        params.permit(:name, :activity, :destination_id)
     end
 
 end

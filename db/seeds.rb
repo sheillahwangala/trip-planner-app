@@ -16,6 +16,7 @@ trip1 = Trip.create(
 #     name: "Serena Elementaita",
 #     location: "Naivasha",
 #     notes: "enjoy scenary, have fun",
-#     trip_id: 1
+#     trip_id: 1,
+#     stop_over_id: 1
    
 # )

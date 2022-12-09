@@ -1,4 +1,4 @@
 class Destination < ApplicationRecord
-    has_many :stopovers
-    has_many :trips, through: :stopovers
+
+    has_many :stop_overs
 end

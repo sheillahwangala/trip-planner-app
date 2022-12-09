@@ -8,12 +8,15 @@ class TripsController < ApplicationController
 
     def show
         trip = Trip.find(params[:id])
-        render json: trip
+        render json: trip, include: :destinations
     end
 
     def create
         trip = Trip.create(trip_params)
         render json: trip, status: :created
+    end
+
+    def delete
     end
 
     private
