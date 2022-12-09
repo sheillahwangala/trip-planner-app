@@ -79,8 +79,14 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
+
+
+# production:
+#   <<: *default
+#   database: trip_planner_production
+#   username: trip_planner
+#   password: <%= ENV["TRIP_PLANNER_DATABASE_PASSWORD"] %>
+
 production:
   <<: *default
-  database: trip_planner_production
-  username: trip_planner
-  password: <%= ENV["TRIP_PLANNER_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
