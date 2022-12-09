@@ -1,0 +1,33 @@
+.home-page {
+    display: flex;
+    box-shadow: 1px 1px 1px -1px #8f6cc6;
+    max-width: 98%;
+    
+  }
+  .container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+  }
+  .classHeader {
+    text-align: left;
+    font-size: 20px;
+  }
+  th {
+    max-width: 15%;
+    padding: 10px;
+  }
+  td {
+    height: 80px;
+    text-align: left;
+  }
+  .team-name {
+    font-weight: bolder;
+    text-align: left;
+  }
+  .moments {
+    text-align: centre; 
+    margin-left: 700px; 
+    padding: 20px;  
+  }
+ 
+  

@@ -1,0 +1,40 @@
+.home{
+    background-color: 	#ADD8E6;
+    text-align: cetre;
+    padding: 10px;
+    background-size: cover;    
+    height: fit-content;
+    padding-left: 200px;
+}
+.home h1{
+    font-family: 'Baby Script', sans-serif;
+    padding: 30px;
+    font-size: 100px;
+    margin-left: 200px;
+}
+
+.home p{
+    max-width: 28%;
+    text-align: center;
+    margin-left: 50px;
+    padding: 20px;
+    font-size: 30px; 
+    margin-top: 50px; 
+}
+.bottom-home{
+    display: flex;
+    margin: 50px;    
+}
+.bottom-home img{
+    max-width: 60%;
+    margin-left: 100px;
+    height: 300px;
+    margin-top: 50px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: larger;
+    font-weight: bolder;
+}
