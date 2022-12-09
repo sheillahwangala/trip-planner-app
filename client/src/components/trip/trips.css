@@ -12,14 +12,7 @@
     text-align: left;
     font-size: 20px;
   }
-  th {
-    max-width: 15%;
-    padding: 10px;
-  }
-  td {
-    height: 80px;
-    text-align: left;
-  }
+  
   .team-name {
     font-weight: bolder;
     text-align: left;
@@ -38,5 +31,8 @@
     margin: 20px;
     margin-left: 20px;
   }
- 
+ .div-form {
+  max-width: 40%;
+  
+ }
   

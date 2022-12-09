@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './trips.css'
 
 function AddTrip() {
     const [title, setTitle] = useState("")
@@ -25,7 +26,7 @@ function AddTrip() {
     }
 
     return (
-        <div>
+        <div className="div-form" >
             <br></br><br></br>
             <h3>Planning for a trip?... Add trip here.</h3>
             <div>
