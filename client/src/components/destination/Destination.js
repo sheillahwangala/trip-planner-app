@@ -4,6 +4,7 @@ function Destination() {
     const [destination, setDestination] = useState([]);
 
     useEffect(() => {
-        
+        fetch("/destinations")
+        .then(())
     })
 }

@@ -81,13 +81,13 @@ test:
 #
 
 
-production:
-  <<: *default
-  database: trip_planner_production
-  username: trip_planner
-  password: <%= ENV["TRIP_PLANNER_DATABASE_PASSWORD"] %>
-  url: <%= ENV['DATABASE_URL'] %>
-
 # production:
 #   <<: *default
+#   database: trip_planner_production
+#   username: trip_planner
+#   password: <%= ENV["TRIP_PLANNER_DATABASE_PASSWORD"] %>
 #   url: <%= ENV['DATABASE_URL'] %>
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
