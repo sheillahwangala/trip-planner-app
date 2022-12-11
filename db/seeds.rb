@@ -6,11 +6,17 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-trip1 = Trip.create(
-   title: "Jamuhuri gate-away",
-   start_date: "Dec 11th 2022",
-    end_date: "Dec 12th 2022",
-)
+
+# trips = Trip.create([{
+#     title: "Jamuhuri gate-away",
+#     tart_date: "Dec 11th 2022",
+#    end_date: "Dec 12th 2022",
+# }])
+# trip1 = Trip.create(
+#    title: "Jamuhuri gate-away",
+#    start_date: "Dec 11th 2022",
+#     end_date: "Dec 12th 2022",
+# )
 
 # destination1 = Destination.create(
 #     name: "Serena Elementaita",
