@@ -17,7 +17,8 @@ function EachTrip() {
             .then((data) => {
                 setTrips(data);
             });
-    })
+    }, [])
+    
     const showTrip = trips.map((trip) =>
         trip.id === parseInt(params.id) && (
             <div>

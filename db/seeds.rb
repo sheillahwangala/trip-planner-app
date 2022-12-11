@@ -16,7 +16,7 @@ destination1 = Destination.create(
     name: "Serena Elementaita",
     location: "Naivasha",
     notes: "enjoy scenary, have fun",
-    trip_id: 1,
-    stop_over_id: 1
+    photos: "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/82/10.jpg",
+    trip_id: 1
    
 )
