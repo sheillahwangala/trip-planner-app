@@ -43,6 +43,10 @@ module TripPlanner
 
     # Use SameSite=Strict for all cookies to help protect against CSRF
     config.action_dispatch.cookies_same_site_protection = :strict
+
+    config.autoload_paths << "#{root}/extras"
+
+    config.add_autoload_paths_to_load_path = false
     
   end
 end
