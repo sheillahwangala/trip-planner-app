@@ -12,11 +12,11 @@ trip1 = Trip.create(
     end_date: "Dec 12th 2022",
 )
 
-# destination1 = Destination.create(
-#     name: "Serena Elementaita",
-#     location: "Naivasha",
-#     notes: "enjoy scenary, have fun",
-#     trip_id: 1,
-#     stop_over_id: 1
+destination1 = Destination.create(
+    name: "Serena Elementaita",
+    location: "Naivasha",
+    notes: "enjoy scenary, have fun",
+    trip_id: 1,
+    stop_over_id: 1
    
-# )
+)

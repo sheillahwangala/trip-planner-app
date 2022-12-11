@@ -38,3 +38,7 @@
     font-size: larger;
     font-weight: bolder;
 }
+.bottom-home h6{
+    text-align: center;
+    max-width: 100%;
+}

@@ -13,9 +13,12 @@ function Home() {
                 <ul><li>Plan Trip</li></ul>
                 <ul><li>Capture Memories</li></ul>
                 <ul><li>Save Moments</li></ul>
-                
+
             </div>
-            <hr></hr>
+            <div className="navbar navbar-expand-sm navbar-dark bg-info px-5" ><br></br>
+                <h6 className="navbar-nav ms-auto" >***Terms and Conditions apply.*** </h6>
+            </div>
+
         </div>
     )
 }
