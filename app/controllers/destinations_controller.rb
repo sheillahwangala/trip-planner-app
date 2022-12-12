@@ -17,6 +17,12 @@ class DestinationsController < ApplicationController
         render json: destination, status: :created
     end
 
+    def destroy
+        destination = Destination.firnd(params[:id])
+        destination.destroy
+        head :no_content
+    end
+
     private
 
     def render_not_found_response

@@ -21,11 +21,11 @@ function Trips() {
                     return (
                         <div className="card" >
                             <div className="card-body">
-                                
+
                                 <Link className="text-decoration-none text-dark"
                                     to={`/trips/${trip.id}`}>
-                                        <h5 className="card-title">{trip.title}</h5>
-                                    
+                                    <h5 className="card-title">{trip.title}</h5>
+
                                 </Link>
                                 <img src="https://easternvacations-kenya.com/wp-content/uploads/2016/08/Naivasha-national-park-Photo-Evacations.jpeg" alt="trip" />
                                 <p className="card-text">{trip.end_date}</p>
@@ -34,6 +34,18 @@ function Trips() {
                                     to={`/trips/${trip.id}`}>
                                     <h4 className="btn btn-primary" >View Trip Destinations</h4>
                                 </Link>
+
+                                <button type="button"
+                                    className="btn btn-danger btn-sm"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        fetch("/trips/:id", {
+                                            method: "DELETE",
+                                        });
+                                    }}
+                                >
+                                    Delete
+                                </button>
                             </div>
                         </div>
                     )
