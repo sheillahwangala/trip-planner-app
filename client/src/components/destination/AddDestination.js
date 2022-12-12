@@ -54,13 +54,13 @@ function AddDestination({ tripId }) {
                     className="mt-2 form-control"
                     placeholder="location"
                     value={location}
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e) => setLocation(e.target.value)}
                 />
                 <input type="text"
                     className="mt-2 form-control"
                     placeholder="notes"
                     value={notes}
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e) => setNotes(e.target.value)}
                 />
                 <input type="file"
                     className="mt-2 form-control"
